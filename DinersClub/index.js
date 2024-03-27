@@ -190,15 +190,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const name = orderDetailsForm.elements["name"].value;
     const phone = orderDetailsForm.elements["phone"].value;
     const tableNo = orderDetailsForm.elements["tableNo"].value;
-    console.log(name, phone, tableNo);
+    const orderId= Math.floor(Math.random() * 10000) + 1;
+    //console.log(name, phone, tableNo);
     // Update HTML body with form details
+    
     
     if(phone){
     const orderDetails = document.createElement("div");
     orderDetails.innerHTML = `
     <div class="OrderConfirm">
     
-      <h1>Your order is confirmed! </h1>
+      <h1>Your order is confirmed!  Order id: #${orderId} </h1>
       <h2>Hey <b>${name}, </b> <br>
       Your Food will be reached at Table Number: <b> ${tableNo} </b> soon! <br>
       We may call at: <b> ${phone} </b> if any query </h2>
