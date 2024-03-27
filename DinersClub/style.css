@@ -32,10 +32,11 @@ header {
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
   height: 157px;
-  margin-top: 10px;
+ margin: 0 auto;
   border-bottom: 2px solid grey;
-  margin-right: 50px;
+  /* margin-right: 50px;
   margin-left: 50px;
+  margin-top: 10px; */
 }
 .section1 {
   font-size: 120px;
