@@ -1,0 +1,231 @@
+body {
+  font-family: "Smythe", system-ui;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  background-image: url("FoodBanner2.png");
+  background-size: cover;
+  text-align: left;
+  text-shadow: 3px;
+  color: rgb(231, 235, 18);
+  height: 165px;
+}
+.shopping-bag{
+/* position: fixed; */
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+.header_name {
+  margin: 0px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.header_name_down {
+  margin: 0px;
+  padding-left: 50px;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  height: 157px;
+  margin-top: 10px;
+  border-bottom: 2px solid grey;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.section1 {
+  font-size: 120px;
+  text-align: right;
+  padding-right: 50px;
+}
+.section2 {
+  size: 30px;
+  text-align: left;
+}
+.food_description {
+  color: grey;
+  font-size: 17px;
+}
+.section3 {
+  margin-top: 50px;
+}
+#showDiv {
+  margin-top: 60px;
+}
+footer {
+  height: 30px;
+  text-align: center;
+}
+.orderSummary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 40px;
+  border: 2px solid green;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: auto;
+  text-align: center;
+}
+.complete-btn {
+  display: inline-block;
+  background-color: rgb(85, 143, 85);
+  font-size: 1.9rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 5px;
+  color: white;
+}
+.order-summary-h2 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 30px;
+  text-align: center;
+}
+#selectedItemsList {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 26px;
+  border-bottom: 2px solid grey;
+  background-color: rgb(193, 212, 193);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  color: rgb(78, 78, 78);
+}
+#price {
+  list-style-type: none;
+  text-align: right;
+  padding-left: 45px;
+}
+#name {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 13px;
+  color: rgb(41, 40, 40);
+}
+.quantity {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.minus-icon {
+  margin: 0;
+  display: none;
+  cursor: pointer;
+}
+.totalAmount {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.orderForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.orderForm input{
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 12px;
+}
+
+.orderForm label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.orderForm button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.submit-btn {
+  display: inline-block;
+  background-color: rgb(85, 143, 85);
+  font-size: 1.9rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.OrderConfirm{
+  display: grid;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr); */
+  margin-top: 40px;
+  border: 2px solid green;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: auto;
+  text-align: center;
+}
+
+/* .motorbike{
+  height: 50px;
+  width: 50px;
+} */

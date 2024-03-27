@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Import google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pooja's Food App</title>
+  <!-- <img src="shopping-bag.png" class="shopping-bag"></img> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <!-- Banner of Food App   -->
+  <header>
+    <h1 class="header_name">Diner's App</h1>
+    <h3 class="header_name_down">Order online Now!!</h3>
+  </header>
+
+  
+    <!-- Rendered .container elements will be added here -->
+    <div class="container-wrapper">
+  <!-- Cart Item Container -->
+  <!-- <div class="container">
+    <div class="section1">🍕</div>  
+    <div class="section2">
+        <section id="cart-item">
+        <div>
+            <h1> Pizza</h1>
+            <h2 class="food_description"> Food description</h2>
+            <h1> $ Cost</h1>
+        </div>
+    </section></div>
+    <div class="section3"> 
+        <img src="plus_icon.png" width="50px" height="=50px"></img>
+    </div>
+  </div> -->
+</div>
+
+
+  
+  <div class="container-wrapper--plus">
+    <div class="orderSummary" style="display:none;">
+      <h2 class="order-summary-h2">Your Order Summary👇🏻</h2>
+      <ul id="selectedItemsList">
+        <ul id="name"></ul>
+        <ul id="price"></ul>
+        <ul id="minus"></ul> <!-- Add the minus element here -->
+      </ul>
+      <p class="totalAmount">Total: $0</p>
+      <button class="complete-btn">Complete Order</button>
+    </div>
+  </div>
+  
+  <div class="overlay hidden"></div>
+  <div class="orderForm hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">Enter Your Details</h2>
+    <form id="orderDetailsForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="tableNo">Table Number:</label>
+      <input type="number" id="tableNo" name="tableNo" min="50" max="100"  required><br>
+
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+  </div>
+
+  
+  <!-- <footer>
+    <p>&copy; Food Ordering Web App by Pooja Raj</p>
+  </footer> -->
+  <script src="index.js" type="module"></script>
+ 
+</body>
+</html>
