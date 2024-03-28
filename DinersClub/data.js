@@ -1,7 +1,7 @@
 export const menuArray = [
     {
         name: "Pizza",
-        ingredients: ["pepperoni", "mushrom", "cheese"],
+        ingredients: ["pepperoni", "vegie"],
         id: 0,
         price: 14,
         emoji: "🍕"
