@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         minusIcon.width = "25";
         minusIcon.height = "22";
         minusIcon.alt = "Minus";
-        minusIcon.style.padding = '3px';
+        minusIcon.style.padding = '2px';
         minusIcon.style.display = "flex";
         minusIcon.classList.add("minus-icon");
         minusIcon.classList.add("hover-effect"); // Add hover effect class
@@ -250,7 +250,10 @@ document.addEventListener("DOMContentLoaded", function () {
     minusIcons.forEach((icon) => {
       icon.remove();
     });
-
+    // const selectedItemsList=document.getElementById("selectedItemsList");
+    // selectedItemsList.style.width= '50%';
+    // selectedItemsList.style.margin= 'auto';
+   
   } else {
     // Display error message
     const errorMessage = document.createElement("div");
